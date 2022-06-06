@@ -20,13 +20,25 @@ class StartPage extends StatelessWidget {
                     ),
           ),
           Flexible(
-            child: Center(
-              child: ElevatedButton(
-                onPressed: () {
-                  controller.setCurrentPage( context, 1 );
-                }, 
-                child: const Text('Go To EndPage')
-              ),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Center( child: Padding( padding: const EdgeInsets.all(15.0),
+                  child: ElevatedButton(
+                      onPressed: () { controller.setCurrentPage( context, 2 ); }, 
+                      child: const Text('Page1')),),
+                ),
+                Center( child: Padding( padding: const EdgeInsets.all(15.0),
+                  child: ElevatedButton(
+                      onPressed: () { controller.setCurrentPage( context, 3 ); }, 
+                      child: const Text('Page2')),),
+                ),
+                Center( child: Padding( padding: const EdgeInsets.all(15.0),
+                  child: ElevatedButton(
+                      onPressed: () { controller.setCurrentPage( context, 1 ); }, 
+                      child: const Text('EndPage')),),
+                ),
+              ],
             ),
           ),          
         ],

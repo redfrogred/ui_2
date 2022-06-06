@@ -21,6 +21,8 @@ class Controller with ChangeNotifier {
   final List<String> _currentPageArray = [
       '/StartPage',
       '/EndPage',
+      '/Page1',
+      '/Page2',      
   ];
 
   int getCurrentPageIndex() {
