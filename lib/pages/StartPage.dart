@@ -35,6 +35,11 @@ class StartPage extends StatelessWidget {
                 ),
                 Center( child: Padding( padding: const EdgeInsets.all(15.0),
                   child: ElevatedButton(
+                      onPressed: () { controller.setCurrentPage( context, 4 ); }, 
+                      child: const Text('Page3')),),
+                ),                
+                Center( child: Padding( padding: const EdgeInsets.all(15.0),
+                  child: ElevatedButton(
                       onPressed: () { controller.setCurrentPage( context, 1 ); }, 
                       child: const Text('EndPage')),),
                 ),
