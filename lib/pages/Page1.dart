@@ -2,8 +2,8 @@ import 'package:provider/provider.dart';
 import '../classes/_core.dart';           // loads all the "core" classes       
 import '../providers/Controller.dart';
 
-class EndPage extends StatelessWidget {
-  const EndPage({ Key? key }) : super(key: key);
+class Page1 extends StatelessWidget {
+  const Page1({ Key? key }) : super(key: key);
 
   @override
   Widget build(BuildContext context) => DefaultTabController(
@@ -11,11 +11,14 @@ class EndPage extends StatelessWidget {
     child: Scaffold (
       //var controller = context.read<Controller>();
       appBar: AppBar(
-        title: Text('EndPage'),
+        title: Text('Page1'),
         centerTitle: true,
+        backgroundColor: Colors.grey[200],
         bottom: TabBar( 
+          indicatorColor: Colors.green,
+          unselectedLabelColor: Colors.grey,
           tabs: [
-            Tab(text: 'Tab1'),
+            Tab(text: 'Tab1b'),
             Tab(text: 'Tab2'),
             Tab(text: 'Tab3'),                        
           ]
