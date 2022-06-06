@@ -22,7 +22,8 @@ class Controller with ChangeNotifier {
       '/StartPage',
       '/EndPage',
       '/Page1',
-      '/Page2',      
+      '/Page2',  
+      '/Page3',      
   ];
 
   int getCurrentPageIndex() {
