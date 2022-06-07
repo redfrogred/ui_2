@@ -1,5 +1,5 @@
-# ui_2 version 0.1.b
+# ui_2 version 0.1.c
 Is for playing around with Flutter tabs...
 
-Page 2
-Adds actual new pages
+Page 3
+Adds actual new pages coming soon...
