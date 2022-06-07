@@ -44,7 +44,8 @@ class _MyAppState extends State<MyApp> with WidgetsBindingObserver {
         // https://api.flutter.dev/flutter/material/TabBarTheme-class.html
         // https://stackoverflow.com/questions/50566868/how-to-change-background-color-of-tabbar-without-changing-the-appbar-in-flutter
         tabBarTheme: const TabBarTheme(
-          labelColor: Colors.pink,
+          labelColor: Colors.black,
+          unselectedLabelColor:Colors.black26,
           //overlayColor: Colors.pink,
         ),
         elevatedButtonTheme: ElevatedButtonThemeData(
@@ -62,6 +63,7 @@ class _MyAppState extends State<MyApp> with WidgetsBindingObserver {
         '/Page1': (context) => const Page1(),
         '/Page2': (context) => const Page2(),
         '/Page3': (context) => const Page3(),
+        '/PageLatin': (context) => const Page3(),
       }
     );
   }
