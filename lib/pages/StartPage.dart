@@ -14,35 +14,116 @@ class StartPage extends StatelessWidget {
 
       body: Column(
         children: [
-          const Flexible(
-            child: Center(
-                      child: Text('StartPage'),
+         Expanded(
+            flex: 1,
+            child: Container(
+              alignment: Alignment.bottomCenter,
+                      child: Text('UI EXAMPLES'),
                     ),
-          ),
+          ),  
           Flexible(
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            flex: 5,
+            child: Column(
               children: [
-                Center( child: Padding( padding: const EdgeInsets.all(15.0),
-                  child: ElevatedButton(
-                      onPressed: () { controller.setCurrentPage( context, 2 ); }, 
-                      child: const Text('Page1')),),
+
+
+
+
+          Expanded(
+            flex: 1,
+            child: Container(
+              alignment: Alignment.bottomCenter,
+                      child: Text('TABS'),
+                    ),
+          ),               
+                Expanded(
+                  flex: 2,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Center( child: Padding( padding: const EdgeInsets.all(15.0),
+                        child: ElevatedButton(
+                            onPressed: () { controller.setCurrentPage( context, 2 ); }, 
+                            child: const Text('Page1')),),
+                      ),
+                      Center( child: Padding( padding: const EdgeInsets.all(15.0),
+                        child: ElevatedButton(
+                            onPressed: () { controller.setCurrentPage( context, 3 ); }, 
+                            child: const Text('Page2')),),
+                      ),
+                      Center( child: Padding( padding: const EdgeInsets.all(15.0),
+                        child: ElevatedButton(
+                            onPressed: () { controller.setCurrentPage( context, 4 ); }, 
+                            child: const Text('Page3')),),
+                      ),                
+
+                    ],
+                  ),
                 ),
-                Center( child: Padding( padding: const EdgeInsets.all(15.0),
-                  child: ElevatedButton(
-                      onPressed: () { controller.setCurrentPage( context, 3 ); }, 
-                      child: const Text('Page2')),),
+
+
+
+
+          Expanded(
+            flex: 1,
+            child: Container(
+              alignment: Alignment.bottomCenter,
+                      child: Text('DATEPICKER'),
+                    ),
+          ),               
+                Expanded(
+                  flex: 2,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Center( child: Padding( padding: const EdgeInsets.all(15.0),
+                        child: ElevatedButton(
+                            onPressed: () { controller.setCurrentPage( context, 5 ); }, 
+                            child: const Text('Page5')),),
+                      ),
+                      Center( child: Padding( padding: const EdgeInsets.all(15.0),
+                        child: ElevatedButton(
+                            onPressed: () { controller.setCurrentPage( context, 5 ); }, 
+                            child: const Text('Page5')),),
+                      ),
+                      Center( child: Padding( padding: const EdgeInsets.all(15.0),
+                        child: ElevatedButton(
+                            onPressed: () { controller.setCurrentPage( context, 5 ); }, 
+                            child: const Text('Page5')),),
+                      ),                
+                    ],
+                  ),
                 ),
-                Center( child: Padding( padding: const EdgeInsets.all(15.0),
-                  child: ElevatedButton(
-                      onPressed: () { controller.setCurrentPage( context, 4 ); }, 
-                      child: const Text('Page3')),),
-                ),                
-                Center( child: Padding( padding: const EdgeInsets.all(15.0),
-                  child: ElevatedButton(
-                      onPressed: () { controller.setCurrentPage( context, 1 ); }, 
-                      child: const Text('EndPage')),),
+
+
+
+
+
+
+          Expanded(
+            flex: 1,
+            child: Container(
+              alignment: Alignment.bottomCenter,
+                      child: Text('OTHER'),
+                    ),
+          ),                
+                Expanded(
+                  flex: 2,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    crossAxisAlignment: CrossAxisAlignment.end,
+                    children: [
+                      Container(
+                        alignment: Alignment.centerRight,
+                        child: Padding( padding: const EdgeInsets.all(15.0),
+                          child: ElevatedButton(
+                              onPressed: () { controller.setCurrentPage( context, 1 ); }, 
+                              child: const Text('EndPage')),),
+                      ),
+                    ],
+                  ),
                 ),
+
               ],
             ),
           ),          
