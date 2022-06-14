@@ -24,6 +24,7 @@ class Controller with ChangeNotifier {
       '/Page1',
       '/Page2',  
       '/Page3',      
+      '/Page5',      
   ];
 
   int getCurrentPageIndex() {
